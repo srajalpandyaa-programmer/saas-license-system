@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Licenses</h2>
+<ul>
+    {% for license in licenses %}
+        <li>
+            {{ license.product_name }} - {{ license.key }}
+            (Active: {{ license.is_active }})
+            <a href="/api/licenses/{{ license.id }}/">Details</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

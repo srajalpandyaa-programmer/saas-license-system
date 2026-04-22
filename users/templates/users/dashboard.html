@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>User Dashboard</h2>
+<p>Welcome, {{ user.username }} (Role: {{ user.role }})</p>
+<ul>
+    <li><a href="/api/licenses/">View Licenses</a></li>
+    <li><a href="/api/payments/">View Payments</a></li>
+</ul>
+{% endblock %}

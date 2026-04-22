@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>License Detail</h2>
+<p>Product: {{ license.product_name }}</p>
+<p>Key: {{ license.key }}</p>
+<p>Assigned To: {{ license.assigned_to }}</p>
+<p>Expiry Date: {{ license.expiry_date }}</p>
+<p>Status: {{ license.is_active }}</p>
+{% endblock %}
